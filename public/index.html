@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-slate-950 text-slate-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusHub API Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom subtle grid background */
+        .grid-bg {
+            background-size: 40px 40px;
+            background-image:
+                linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+
+        /* Pulse glow animation for status dot */
+        @keyframes pulse-glow {
+
+            0%,
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7);
+            }
+
+            50% {
+                transform: scale(1.1);
+                box-shadow: 0 0 12px 4px rgba(245, 158, 11, 0.4);
+            }
+        }
+
+        .status-glow {
+            animation: pulse-glow 2s infinite ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="h-full flex flex-col justify-between font-sans antialiased overflow-x-hidden relative grid-bg">
+
+    <!-- Ambient Radial Glows -->
+    <div
+        class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none">
+    </div>
+    <div
+        class="absolute bottom-10 right-10 w-[300px] h-[300px] bg-emerald-600/5 rounded-full blur-[100px] pointer-events-none">
+    </div>
+
+    <!-- Header Section -->
+    <header class="w-full max-w-7xl mx-auto px-6 py-6 flex justify-between items-center z-10">
+        <div class="flex items-center space-x-3">
+            <!-- Brand Logo Mark -->
+            <div
+                class="h-10 w-10 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center shadow-lg shadow-indigo-500/20">
+                <i class="fa-solid fa-layer-group text-white text-lg"></i>
+            </div>
+            <div>
+                <span
+                    class="font-bold text-lg tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-300">CampusHub</span>
+                <span class="text-xs block text-slate-500 font-mono">api.campushub.my</span>
+            </div>
+        </div>
+
+        <!-- Status Indicator -->
+        <div
+            class="flex items-center space-x-2.5 bg-slate-900/80 border border-slate-800 rounded-full py-1.5 px-4 backdrop-blur-md">
+            <span class="relative flex h-2 w-2">
+                <span
+                    class="status-glow absolute inline-flex h-full w-full rounded-full bg-amber-500 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+            </span>
+            <span class="text-xs font-medium text-slate-300">Private Gateway</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col justify-center items-center px-6 py-12 z-10">
+        <div class="max-w-2xl w-full text-center space-y-8">
+
+            <!-- Icon/Visual Badge -->
+            <div
+                class="inline-flex items-center justify-center p-4 bg-slate-900/60 border border-slate-800/80 rounded-2xl shadow-xl backdrop-blur-md mb-2">
+                <i class="fa-solid fa-lock text-3xl text-indigo-400"></i>
+            </div>
+
+            <!-- Heading -->
+            <div class="space-y-3">
+                <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white">
+                    CampusHub API Portal
+                </h1>
+                <p class="text-lg text-slate-400 font-light max-w-xl mx-auto leading-relaxed">
+                    This subdomain serves as the secure backend API distribution engine. Direct public or
+                    unauthenticated access is strictly restricted.
+                </p>
+            </div>
+
+            <!-- Notice Callout Box -->
+            <div
+                class="bg-slate-900/40 border border-slate-800/60 rounded-xl p-5 text-left max-w-xl mx-auto space-y-2 backdrop-blur-sm">
+                <div class="flex items-center space-x-2 text-amber-400 font-semibold text-sm">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <span>Access Notice</span>
+                </div>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Public client routing and browser exploration of this gateway is disabled. If you are an authorized
+                    developer or third-party partner integration, please use your provisioned endpoints and client
+                    credentials headers via secure channels.
+                </p>
+            </div>
+
+            <!-- Interactive API Test Console -->
+            <div
+                class="w-full text-left bg-slate-950/95 border border-slate-800 rounded-xl overflow-hidden shadow-2xl shadow-black/50">
+                <!-- Window Header -->
+                <div
+                    class="flex items-center justify-between px-4 py-3 bg-slate-900 border-b border-slate-800/60 select-none">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-3 h-3 rounded-full bg-rose-500/80"></div>
+                        <div class="w-3 h-3 rounded-full bg-amber-500/80"></div>
+                        <div class="w-3 h-3 rounded-full bg-emerald-500/80"></div>
+                    </div>
+                    <span class="text-xs font-mono text-slate-500">terminal@campushub-api</span>
+                    <i class="fa-solid fa-terminal text-xs text-slate-500"></i>
+                </div>
+
+                <!-- Terminal Screen -->
+                <div class="p-5 font-mono text-xs sm:text-sm space-y-4 min-h-[220px]">
+                    <div class="flex items-start space-x-2">
+                        <span class="text-indigo-400 select-none">$</span>
+                        <span class="text-slate-300">curl -i https://api.campushub.my/v1/health</span>
+                    </div>
+
+                    <!-- Output Area (Dynamic/Static) -->
+                    <div id="terminal-output" class="text-slate-500 transition-all duration-300 space-y-2">
+                        <p class="italic text-slate-600">// Click the button below to simulate target gateway
+                            connectivity.</p>
+                    </div>
+                </div>
+
+                <!-- Window Action Bar -->
+                <div class="px-4 py-3 bg-slate-900/60 border-t border-slate-800/60 flex justify-between items-center">
+                    <span class="text-xs text-slate-500 font-mono">Response Protocol: HTTP/2</span>
+                    <button onclick="simulatePing()" id="ping-btn"
+                        class="flex items-center space-x-2 bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 text-white font-medium text-xs px-4 py-2 rounded-lg transition-all duration-200 shadow-md shadow-indigo-600/10">
+                        <i class="fa-solid fa-play"></i>
+                        <span>Test Connectivity</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Quick Links / Actions -->
+            <div class="flex flex-wrap justify-center gap-4 text-sm pt-4">
+                <a href="https://campushub.my" target="_blank" rel="noopener"
+                    class="text-slate-400 hover:text-white transition-colors duration-150 flex items-center space-x-1.5">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>CampusHub Homepage</span>
+                </a>
+                <span class="text-slate-700">|</span>
+                <button onclick="copyToClipboard('api.campushub.my')"
+                    class="text-slate-400 hover:text-white transition-colors duration-150 flex items-center space-x-1.5 focus:outline-none">
+                    <i class="fa-regular fa-copy"></i>
+                    <span id="copy-text">Copy Domain API</span>
+                </button>
+                <span class="text-slate-700">|</span>
+                <a href="mailto:support@campushub.my"
+                    class="text-slate-400 hover:text-white transition-colors duration-150 flex items-center space-x-1.5">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>Contact Dev Support</span>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer
+        class="w-full max-w-7xl mx-auto px-6 py-8 text-center text-xs text-slate-600 border-t border-slate-900 z-10">
+        <p>&copy; 2026 CampusHub (campushub.my). All secure developer infrastructure rights reserved.</p>
+        <p class="mt-1 font-mono text-[10px] text-slate-700">NODE_ENV: production | GATEWAY_IP: dynamic_shield</p>
+    </footer>
+
+    <!-- Interactive Logic scripts -->
+    <script>
+        let isSimulating = false;
+
+        function simulatePing() {
+            if (isSimulating) return;
+            isSimulating = true;
+
+            const btn = document.getElementById('ping-btn');
+            const output = document.getElementById('terminal-output');
+
+            // Set Loading state
+            btn.innerHTML = `<i class="fa-solid fa-circle-notch animate-spin"></i> <span>Pinging...</span>`;
+            btn.disabled = true;
+
+            output.innerHTML = `
+                <p class="text-slate-400">DNS resolution resolved [api.campushub.my] ...</p>
+                <p class="text-indigo-300">Connecting to api.campushub.my...</p>
+            `;
+
+            setTimeout(() => {
+                output.innerHTML += `
+                    <p class="text-slate-400">TLS Handshake accomplished (TLS_AES_256_GCM_SHA384)</p>
+                    <p class="text-slate-400">Request Headers transmitted.</p>
+                `;
+
+                setTimeout(() => {
+                    output.innerHTML = `
+                        <div class="text-slate-400">HTTP/2 <span class="text-rose-500 font-bold">403 Forbidden</span></div>
+                        <div class="text-slate-500">content-type: application/json; charset=utf-8</div>
+                        <div class="text-slate-500">date: ${new Date().toUTCString()}</div>
+                        <div class="text-slate-500">server: campushub-gateway</div>
+                        <div class="text-slate-500">cache-control: no-store, no-cache</div>
+                        <div class="mt-2 text-rose-400/90 font-medium">
+{
+  "status": 403,
+  "error": "Forbidden",
+  "message": "Direct public client requests are not allowed on this gateway domain.",
+  "access": "RESTRICTED",
+  "help": "Please refer to provisioned internal docs or contact integration managers."
+}
+                        </div>
+                    `;
+
+                    // Reset button state
+                    btn.innerHTML = `<i class="fa-solid fa-rotate-right"></i> <span>Ping Again</span>`;
+                    btn.disabled = false;
+                    isSimulating = false;
+                }, 1000);
+
+            }, 800);
+        }
+
+        function copyToClipboard(text) {
+            // Helper function to safely copy domain
+            const dummy = document.createElement("input");
+            document.body.appendChild(dummy);
+            dummy.value = text;
+            dummy.select();
+            document.execCommand("copy");
+            document.body.removeChild(dummy);
+
+            const copyText = document.getElementById('copy-text');
+            copyText.textContent = 'Copied!';
+            copyText.classList.add('text-indigo-400');
+
+            setTimeout(() => {
+                copyText.textContent = 'Copy Domain API';
+                copyText.classList.remove('text-indigo-400');
+            }, 2000);
+        }
+    </script>
+</body>
+
+</html>
