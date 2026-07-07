@@ -1,0 +1,26 @@
+[
+    {
+        "org_domain": "um.edu.my",
+        "org_name": "Universiti Malaya",
+        "org_prefix": "UM",
+        "org_index_number": "1003"
+    },
+    {
+        "org_domain": "utp.edu.my",
+        "org_name": "Universiti Teknologi PETRONAS",
+        "org_prefix": "UTP",
+        "org_index_number": "1001"
+    },
+    {
+        "org_domain": "uis.edu.my",
+        "org_name": "Universiti Islam Selangor",
+        "org_prefix": "UIS",
+        "org_index_number": "1002"
+    },
+    {
+        "org_domain": "qimlab.my",
+        "org_name": "Qim Lab Enterprise",
+        "org_prefix": "QLENT",
+        "org_index_number": "5001"
+    }
+]
