@@ -2,67 +2,91 @@
     "stations": [
         {
             "id": "S1",
-            "name": "Main Entrance Gate (Pos 1)",
-            "lat": 1.55620,
-            "lng": 103.62620
+            "name": "PMMD",
+            "lat": 4.388359,
+            "lng": 100.967871
         },
         {
             "id": "S2",
-            "name": "Perpustakaan Sultanah Zanariah (PSZ)",
+            "name": "Chancellor Complex (CH)",
             "lat": 1.56100,
             "lng": 103.63840
         },
         {
             "id": "S3",
-            "name": "Faculty of Computing (FC)",
+            "name": "Block L",
             "lat": 1.56540,
             "lng": 103.63770
         },
         {
             "id": "S4",
-            "name": "Kolej Tun Dr. Ismail (KTDI)",
+            "name": "Village 4 & Village 5",
             "lat": 1.56840,
             "lng": 103.63460
         },
         {
             "id": "S5",
-            "name": "Kolej Rahman Putra (KRP)",
+            "name": "Main Gate",
             "lat": 1.56560,
             "lng": 103.63050
         },
         {
             "id": "S6",
-            "name": "Kolej 9 & 10 (K9/K10)",
+            "name": "Pump Station, Tronoh",
             "lat": 1.56940,
             "lng": 103.64250
         },
         {
             "id": "S7",
-            "name": "Faculty of Engineering (FE)",
+            "name": "Lotus Bandar U",
             "lat": 1.56380,
             "lng": 103.64450
         },
         {
             "id": "S8",
-            "name": "Sports Complex & Stadium",
+            "name": "Bandar Universiti",
             "lat": 1.55850,
             "lng": 103.64680
         },
         {
             "id": "S9",
-            "name": "Student Union (SUB)",
+            "name": "Bus Terminal Seri Iskandar",
             "lat": 1.56080,
             "lng": 103.64150
+        },
+        {
+            "id": "S10",
+            "name": "SIBC @ Billion Shopping Centre",
+            "lat": 1.56540,
+            "lng": 103.63770
+        },
+        {
+            "id": "S11",
+            "name": "Apartment SI",
+            "lat": 1.56540,
+            "lng": 103.63770
+        },
+        {
+            "id": "S12",
+            "name": "Iskandar PRIMA SOHO",
+            "lat": 1.56540,
+            "lng": 103.63770
+        },
+        {
+            "id": "S13",
+            "name": "IFS SOHO Aparment (IUS)",
+            "lat": 1.56540,
+            "lng": 103.63770
         }
     ],
     "lanes": [
         {
             "id": "L1",
-            "name": "Blue Line",
+            "name": "Internal",
             "type": "bus",
             "color": "#2196F3",
-            "description": "Connects main entrance, central library, student union, and major dorms.",
-            "operating_hours": "08:00 AM - 10:00 PM",
+            "description": "Internal shuttle route",
+            "operating_hours": "08.10 AM - 07:05 PM",
             "stops": [
                 {
                     "station_id": "S1",
@@ -70,11 +94,11 @@
                 },
                 {
                     "station_id": "S2",
-                    "arrival_offset_minutes": 4
+                    "arrival_offset_minutes": 5
                 },
                 {
                     "station_id": "S9",
-                    "arrival_offset_minutes": 7
+                    "arrival_offset_minutes": 5
                 },
                 {
                     "station_id": "S7",
@@ -91,51 +115,25 @@
                 {
                     "station_id": "S4",
                     "arrival_offset_minutes": 22
-                },
-                {
-                    "station_id": "S5",
-                    "arrival_offset_minutes": 25
-                },
-                {
-                    "station_id": "S1",
-                    "arrival_offset_minutes": 30
                 }
             ],
             "trip_start_times": [
-                "08:00",
-                "08:30",
-                "09:00",
-                "09:30",
-                "10:00",
-                "10:30",
-                "11:00",
-                "11:30",
-                "12:00",
-                "13:00",
-                "13:30",
-                "14:00",
-                "14:30",
-                "15:00",
-                "15:30",
-                "16:00",
-                "16:30",
-                "17:00",
-                "17:30",
-                "18:00",
-                "19:00",
-                "20:00",
-                "21:00",
-                "21:30",
-                "22:00"
+                "08:10",
+                "09:50",
+                "10:55",
+                "14.05",
+                "15.05",
+                "16.05",
+                "18.05"
             ]
         },
         {
             "id": "L2",
-            "name": "Red Line",
-            "type": "van",
+            "name": "External 1",
+            "type": "bus",
             "color": "#E53935",
-            "description": "Inner loop connecting faculties, student colleges, sports complex, and the library.",
-            "operating_hours": "08:10 AM - 08:10 PM",
+            "description": "External shuttle route 1",
+            "operating_hours": "07:00 AM - 10:50 AM",
             "stops": [
                 {
                     "station_id": "S5",
@@ -171,31 +169,86 @@
                 }
             ],
             "trip_start_times": [
-                "08:10",
-                "08:30",
-                "08:50",
-                "09:10",
-                "09:30",
-                "09:50",
-                "10:10",
-                "10:30",
-                "10:50",
-                "11:10",
-                "11:30",
-                "11:50",
-                "12:10",
-                "15:30",
-                "15:50",
-                "16:10",
-                "16:30",
-                "16:50",
-                "17:10",
-                "17:30",
-                "17:50",
-                "18:10",
-                "19:10",
-                "19:40",
-                "20:10"
+                "07:00",
+                "08:45",
+                "09:45",
+                "12:45",
+                "13:45",
+                "14:45",
+                "16:45",
+                "17:45"
+            ]
+        },
+        {
+            "id": "L3",
+            "name": "External 2",
+            "type": "bus",
+            "color": "#E53935",
+            "description": "External shuttle route 2",
+            "operating_hours": "12:45 PM - 07:00 PM",
+            "stops": [
+                {
+                    "station_id": "S5",
+                    "arrival_offset_minutes": 0
+                },
+                {
+                    "station_id": "S4",
+                    "arrival_offset_minutes": 5
+                },
+                {
+                    "station_id": "S3",
+                    "arrival_offset_minutes": 5
+                },
+                {
+                    "station_id": "S2",
+                    "arrival_offset_minutes": 5
+                },
+                {
+                    "station_id": "S9",
+                    "arrival_offset_minutes": 5
+                },
+                {
+                    "station_id": "S8",
+                    "arrival_offset_minutes": 10
+                },
+                {
+                    "station_id": "S7",
+                    "arrival_offset_minutes": 10
+                },
+                {
+                    "station_id": "S5",
+                    "arrival_offset_minutes": 5
+                },
+                {
+                    "station_id": "S5",
+                    "arrival_offset_minutes": 5
+                },
+                {
+                    "station_id": "S5",
+                    "arrival_offset_minutes": 5
+                },
+                {
+                    "station_id": "S5",
+                    "arrival_offset_minutes": 10
+                },
+                {
+                    "station_id": "S5",
+                    "arrival_offset_minutes": 5
+                },
+                {
+                    "station_id": "S5",
+                    "arrival_offset_minutes": 5
+                }
+            ],
+            "trip_start_times": [
+                "07:00",
+                "08:45",
+                "09:45",
+                "12:45",
+                "13:45",
+                "14:45",
+                "16:45",
+                "17:45"
             ]
         }
     ]
