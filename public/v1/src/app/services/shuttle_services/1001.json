@@ -129,7 +129,7 @@
         },
         {
             "id": "L2",
-            "name": "External 1",
+            "name": "External",
             "type": "bus",
             "color": "#E53935",
             "description": "External shuttle route 1",
@@ -181,9 +181,9 @@
         },
         {
             "id": "L3",
-            "name": "External 2",
+            "name": "External",
             "type": "bus",
-            "color": "#E53935",
+            "color": "#F7FF05",
             "description": "External shuttle route 2",
             "operating_hours": "12:45 PM - 07:00 PM",
             "stops": [
