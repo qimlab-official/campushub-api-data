@@ -129,7 +129,7 @@
         },
         {
             "id": "L2",
-            "name": "External Route 1",
+            "name": "External 1",
             "type": "bus",
             "color": "#E53935",
             "description": "External shuttle route 1",
@@ -180,8 +180,8 @@
             ]
         },
         {
-            "id": "L2",
-            "name": "External Route 2",
+            "id": "L3",
+            "name": "External 2",
             "type": "bus",
             "color": "#F7FF05",
             "description": "External shuttle route 2",
