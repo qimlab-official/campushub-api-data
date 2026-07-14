@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "campushub-api-portal",
+  "name": "campushub-api-gateway",
   "compatibility_date": "2026-07-07",
   "observability": {
     "enabled": true
