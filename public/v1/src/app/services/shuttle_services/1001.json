@@ -9,74 +9,80 @@
         {
             "id": "S2",
             "name": "Chancellor Complex (CH)",
-            "lat": 1.56100,
-            "lng": 103.63840
+            "lat": 4.382098,
+            "lng": 100.970371
         },
         {
             "id": "S3",
             "name": "Block L",
-            "lat": 1.56540,
-            "lng": 103.63770
+            "lat": 4.385842,
+            "lng": 100.971207
         },
         {
             "id": "S4",
             "name": "Village 4 & Village 5",
-            "lat": 1.56840,
-            "lng": 103.63460
+            "lat": 4.388698,
+            "lng": 100.965136
         },
         {
             "id": "S5",
             "name": "Main Gate",
-            "lat": 1.56560,
-            "lng": 103.63050
+            "lat": 4.385702,
+            "lng": 100.979366
         },
         {
             "id": "S6",
             "name": "Pump Station, Tronoh",
-            "lat": 1.56940,
-            "lng": 103.64250
+            "lat": 4.364101,
+            "lng": 100.976769
         },
         {
             "id": "S7",
             "name": "Lotus Bandar U",
-            "lat": 1.56380,
-            "lng": 103.64450
+            "lat": 4.365679,
+            "lng": 100.979216
         },
         {
             "id": "S8",
             "name": "Bandar Universiti",
-            "lat": 1.55850,
-            "lng": 103.64680
+            "lat": 4.364905,
+            "lng": 100.979519
         },
         {
             "id": "S9",
             "name": "Bus Terminal Seri Iskandar",
-            "lat": 1.56080,
-            "lng": 103.64150
+            "lat": 4.362752,
+            "lng": 100.976224
         },
         {
             "id": "S10",
             "name": "SIBC @ Billion Shopping Centre",
-            "lat": 1.56540,
-            "lng": 103.63770
+            "lat": 4.355337,
+            "lng": 100.969302
         },
         {
             "id": "S11",
             "name": "Apartment SI",
-            "lat": 1.56540,
-            "lng": 103.63770
+            "lat": 4.366586,
+            "lng": 100.966866
         },
         {
             "id": "S12",
             "name": "Iskandar PRIMA SOHO",
-            "lat": 1.56540,
-            "lng": 103.63770
+            "lat": 4.361643,
+            "lng": 100.971519
         },
         {
             "id": "S13",
             "name": "IFS SOHO Aparment (IUS)",
-            "lat": 1.56540,
-            "lng": 103.63770
+            "lat": 4.373876,
+            "lng": 100.978516
+        },
+        {
+            "id": "S14",
+            "name": "Block R&D",
+            "lat": 4.379718,
+            "lng": 100.961736
         }
     ],
     "lanes": [
@@ -96,7 +102,7 @@
             ],
             "stops": [
                 {
-                    "station_id": "S1",
+                    "station_id": "S5",
                     "arrival_offset_minutes": 0
                 },
                 {
@@ -104,24 +110,24 @@
                     "arrival_offset_minutes": 5
                 },
                 {
-                    "station_id": "S9",
+                    "station_id": "S3",
                     "arrival_offset_minutes": 5
                 },
                 {
-                    "station_id": "S7",
-                    "arrival_offset_minutes": 11
-                },
-                {
-                    "station_id": "S6",
-                    "arrival_offset_minutes": 15
-                },
-                {
-                    "station_id": "S3",
-                    "arrival_offset_minutes": 19
+                    "station_id": "S1",
+                    "arrival_offset_minutes": 5
                 },
                 {
                     "station_id": "S4",
-                    "arrival_offset_minutes": 22
+                    "arrival_offset_minutes": 5
+                },
+                {
+                    "station_id": "S14",
+                    "arrival_offset_minutes": 5
+                },
+                {
+                    "station_id": "S1",
+                    "arrival_offset_minutes": 5
                 }
             ],
             "trip_start_times": [
@@ -147,47 +153,50 @@
             ],
             "stops": [
                 {
-                    "station_id": "S5",
+                    "station_id": "S1",
                     "arrival_offset_minutes": 0
                 },
                 {
-                    "station_id": "S4",
-                    "arrival_offset_minutes": 3
+                    "station_id": "S5",
+                    "arrival_offset_minutes": 5
                 },
                 {
-                    "station_id": "S3",
-                    "arrival_offset_minutes": 6
-                },
-                {
-                    "station_id": "S2",
-                    "arrival_offset_minutes": 9
-                },
-                {
-                    "station_id": "S9",
-                    "arrival_offset_minutes": 12
-                },
-                {
-                    "station_id": "S8",
-                    "arrival_offset_minutes": 16
+                    "station_id": "S6",
+                    "arrival_offset_minutes": 10
                 },
                 {
                     "station_id": "S7",
-                    "arrival_offset_minutes": 20
+                    "arrival_offset_minutes": 10
                 },
                 {
-                    "station_id": "S5",
-                    "arrival_offset_minutes": 24
+                    "station_id": "S8",
+                    "arrival_offset_minutes": 5
+                },
+                {
+                    "station_id": "S9",
+                    "arrival_offset_minutes": 5
+                },
+                {
+                    "station_id": "S10",
+                    "arrival_offset_minutes": 5
+                },
+                {
+                    "station_id": "S11",
+                    "arrival_offset_minutes": 10
+                },
+                {
+                    "station_id": "S12",
+                    "arrival_offset_minutes": 5
+                },
+                {
+                    "station_id": "S13",
+                    "arrival_offset_minutes": 5
                 }
             ],
             "trip_start_times": [
                 "07:00",
                 "08:45",
-                "09:45",
-                "12:45",
-                "13:45",
-                "14:45",
-                "16:45",
-                "17:45"
+                "09:45"
             ]
         },
         {
@@ -203,15 +212,11 @@
             ],
             "stops": [
                 {
-                    "station_id": "S5",
+                    "station_id": "S1",
                     "arrival_offset_minutes": 0
                 },
                 {
-                    "station_id": "S4",
-                    "arrival_offset_minutes": 5
-                },
-                {
-                    "station_id": "S3",
+                    "station_id": "S14",
                     "arrival_offset_minutes": 5
                 },
                 {
@@ -219,11 +224,15 @@
                     "arrival_offset_minutes": 5
                 },
                 {
-                    "station_id": "S9",
+                    "station_id": "S3",
                     "arrival_offset_minutes": 5
                 },
                 {
-                    "station_id": "S8",
+                    "station_id": "S5",
+                    "arrival_offset_minutes": 5
+                },
+                {
+                    "station_id": "S6",
                     "arrival_offset_minutes": 10
                 },
                 {
@@ -231,34 +240,31 @@
                     "arrival_offset_minutes": 10
                 },
                 {
-                    "station_id": "S5",
+                    "station_id": "S8",
                     "arrival_offset_minutes": 5
                 },
                 {
-                    "station_id": "S5",
+                    "station_id": "S9",
                     "arrival_offset_minutes": 5
                 },
                 {
-                    "station_id": "S5",
+                    "station_id": "S10",
                     "arrival_offset_minutes": 5
                 },
                 {
-                    "station_id": "S5",
+                    "station_id": "S11",
                     "arrival_offset_minutes": 10
                 },
                 {
-                    "station_id": "S5",
+                    "station_id": "S12",
                     "arrival_offset_minutes": 5
                 },
                 {
-                    "station_id": "S5",
+                    "station_id": "S13",
                     "arrival_offset_minutes": 5
                 }
             ],
             "trip_start_times": [
-                "07:00",
-                "08:45",
-                "09:45",
                 "12:45",
                 "13:45",
                 "14:45",
